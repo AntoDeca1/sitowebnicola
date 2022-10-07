@@ -1,0 +1,52 @@
+.interventi_section {
+  padding: 9.8rem 4.8rem;
+  transition: all 1s ease-in;
+}
+
+.interventi_title {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+.interventi_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.animation_box img {
+  width: 100%;
+}
+
+.interventi_text p {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.interventi_text li {
+  font-size: 1.8rem;
+  line-height: 1.5;
+}
+
+.interventi_list {
+  margin-left: 1.8rem;
+}
+@media (max-width: 40.6em) {
+  .interventi_container {
+    grid-template-columns: 1fr;
+  }
+  .interventi_title {
+    font-size: 2.8rem;
+    font-weight: 500;
+  }
+
+  .interventi_section {
+    padding: 9.2rem 4.2rem;
+  }
+}
+
+@media (max-width: 36.5em) {
+  .interventi_section {
+    padding: 0;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+  }
+}

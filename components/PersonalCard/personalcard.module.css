@@ -1,0 +1,27 @@
+.personalCard {
+  background: #b6b2b220;
+  padding: 2.4rem;
+  border-radius: 4rem;
+  -webkit-box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
+  box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
+}
+
+.personalCard_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.personalCard_header {
+  color: black;
+}
+.nic_img {
+  width: 10rem;
+}
+
+@media (max-width: 36.5em) {
+  .personalCard {
+    grid-column: 1/3;
+  }
+}

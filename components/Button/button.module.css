@@ -1,0 +1,63 @@
+/* 
+COLOR:#5E3BEE
+
+*/
+.btn:link,
+.btn:visited {
+  padding: 1.2rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
+  box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
+  /* Aggiunta */
+  position: relative;
+  overflow: hidden;
+}
+
+.small {
+  padding: 0.4rem;
+  font-size: 1.2rem;
+}
+.fill {
+  padding: 1.2rem;
+  cursor: pointer;
+  color: rgb(39, 68, 148);
+
+  border: 1px solid rgb(39, 68, 148);
+  background: transparent;
+}
+
+.stroke {
+  background: rgb(39, 68, 148);
+  border: 1px solid rgb(39, 68, 148);
+  color: #ffff;
+}
+
+.stroke:hover::before {
+  transform: scaleX(1);
+}
+
+.btn-content {
+  position: relative;
+  z-index: 1;
+}
+
+.stroke:hover {
+  outline: none;
+  transform: translateY(-1rem);
+  background: rgb(29, 51, 110);
+}
+
+.none {
+  display: none;
+}
+
+.fill:hover {
+  background: rgb(39, 68, 148);
+  color: #ffff;
+}

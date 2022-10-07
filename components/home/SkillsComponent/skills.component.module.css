@@ -1,0 +1,36 @@
+.skills_box_container {
+  max-width: 120rem;
+  margin: auto;
+  padding: 0 3.2rem;
+}
+
+.skills_box_title {
+  font-size: 4.4rem;
+  margin-bottom: 1rem;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.2rem;
+}
+.skills_box_subtitle {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+@media (max-width: 60em) {
+  .card_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+
+@media (max-width: 36.5em) {
+  .card_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+}

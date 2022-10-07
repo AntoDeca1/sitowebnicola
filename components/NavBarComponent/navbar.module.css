@@ -1,0 +1,122 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  -webkit-box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
+  box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 2s ease-in-out;
+  z-index: 20;
+  background-color: #fff;
+  height: 100%;
+}
+
+.logo {
+  cursor: pointer;
+}
+
+.on {
+  color: #274494;
+  font-weight: 700;
+}
+
+.navbar_list {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.navbar_link:link,
+.navbar_link:visited {
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #555;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+.navbar_link:link.on,
+.navbar_link:visited.on {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #274494;
+  font-weight: 700;
+}
+
+.navbar_link:hover {
+  color: #274494;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
+/* .navbar-link:hover::after,
+  .navbar-link.on::after {
+    content: '';
+    width: 70%;
+    height: 0.2rem;
+    background-color: #274494;
+    position: absolute;
+    bottom: -0.4rem;
+    left: 0.5rem;
+    z-index: 40;
+  } */
+
+.mobile-menu-icon {
+  padding: 1rem;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav_btn {
+  padding: 0.5rem;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: none;
+}
+
+@media (max-width: 70em) {
+  .navbar_list {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 13rem;
+    right: -300px;
+    width: 200px;
+    height: 100vh;
+    background-color: #f5f7fa;
+    box-shadow: 5px 5px 13px -1px rgba(0, 0, 0, 0.27);
+    transition: all 0.2s ease-in-out;
+    padding: 1.2rem;
+    opacity: 1;
+  }
+
+  .navbar_active {
+    right: 0px;
+  }
+
+  .icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .navbar_list li {
+    margin-bottom: 2rem;
+  }
+
+  .nav_btn {
+    display: block;
+  }
+}

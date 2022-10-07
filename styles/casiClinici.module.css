@@ -1,0 +1,40 @@
+.casiClinici_section {
+  padding: 4.8rem 9.6rem;
+}
+
+.casiClinici_title {
+  font-size: 3.2rem;
+  font-weight: 400;
+}
+.casiClinici_header {
+  margin-bottom: 1.2rem;
+  margin-top: 1rem;
+}
+.casiClinici_header p {
+  font-size: 1.6rem;
+}
+
+.videobox_title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+}
+
+.video {
+  max-width: 70%;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  border-radius: 4rem;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+@media (max-width: 36.5em) {
+  .casiClinici_section {
+    padding: 0;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+  }
+}
