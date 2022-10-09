@@ -3,7 +3,7 @@ import { ImLocation } from 'react-icons/im';
 import { BsFillTelephoneFill } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { AiFillClockCircle } from 'react-icons/ai';
-import { Head } from 'next/head';
+import Head from 'next/head';
 function ContactPage() {
   return (
     <section className={classes.contact_section}>
