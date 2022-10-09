@@ -262,6 +262,8 @@ function AboutPage() {
             alt={'foto dottore Nicola De Candia Bari'}
             width={505}
             height={758}
+            placeholder='blur'
+            blurDataURL='assets/papa2placeholder.png'
           ></Image>
         </div>
       </div>

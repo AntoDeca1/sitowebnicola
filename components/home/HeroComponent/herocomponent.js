@@ -58,6 +58,8 @@ function Hero() {
           title='foto Dottore Nicola De Candia'
           width={454}
           height={681}
+          placeholder='blur'
+          blurDataURL='assets/papa2placeholder.png'
         />
       </div>
     </div>
