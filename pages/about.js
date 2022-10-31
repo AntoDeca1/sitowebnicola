@@ -2,6 +2,7 @@ import classes from '../styles/About.module.css';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import Head from 'next/head';
+import { motion, AnimatePresence } from 'framer-motion';
 function AboutPage() {
   const { ref: aboutmeRef, inView: heroVisible } = useInView();
   return (
@@ -259,7 +260,13 @@ function AboutPage() {
             </p>
           </div>
         </div>
-        <div className={classes.aboutme_imgcontainer}>
+        <motion.div
+          className={classes.aboutme_imgcontainer}
+          whileInView={{ translateY: 0, opacity: 1 }}
+          initial={{ translateY: 500, opacity: 0 }}
+          transition={{ duration: 2, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
           <Image
             className={classes.aboutme_img}
             src={'/assets/papa2.png'}
@@ -269,7 +276,7 @@ function AboutPage() {
             placeholder='blur'
             blurDataURL='assets/papa2placeholder.png'
           ></Image>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

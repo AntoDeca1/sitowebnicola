@@ -19,6 +19,8 @@ function SlideShow() {
         title='foto Dottore Nicola De Candia'
         layout='fill'
         objectFit='cover'
+        placeholder='blur'
+        blurDataURL='/assets/DSC073223ph.webp'
       />
       <div className={classes.herotext}>
         <div className={classes.heroheadingbox}>

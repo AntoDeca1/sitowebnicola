@@ -124,7 +124,11 @@ function NavBar() {
             </a>
           </li>
         </ul>
-        <button className={classes.nav_btn} onClick={handleClick}>
+        <button
+          className={classes.nav_btn}
+          onClick={handleClick}
+          aria-label='closeNavBar'
+        >
           {mobile ? (
             <ImCross className={classes.icon} />
           ) : (

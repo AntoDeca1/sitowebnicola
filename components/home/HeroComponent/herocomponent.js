@@ -61,7 +61,7 @@ function Hero() {
         className={classes.hero_imagebox}
         whileInView={{ scale: 1, opacity: 1 }}
         initial={{ scale: 0, opacity: 0 }}
-        transition={{ duration: 2, delay: 0.5 }}
+        transition={{ duration: 2, delay: 0.2 }}
         viewport={{ once: true }}
       >
         <Image
