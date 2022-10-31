@@ -2,6 +2,7 @@ import classes from './hero.module.css';
 import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Button from '../../Button/button';
+import { motion } from 'framer-motion';
 function Hero() {
   const router = useRouter();
   const gotoAbout = (e) => {
@@ -12,7 +13,13 @@ function Hero() {
 
   return (
     <div className={`${classes.hero} container`}>
-      <div className={classes.hero_content}>
+      <motion.div
+        className={classes.hero_content}
+        whileInView={{ translateX: 0, opacity: 1 }}
+        initial={{ translateX: -200, opacity: 0 }}
+        transition={{ duration: 2 }}
+        viewport={{ once: true }}
+      >
         <div className={classes.hero_content_text}>
           <h2 className={classes.hero_title}>
             <span className={classes.color}>Dott</span>.Nicola De Candia
@@ -49,8 +56,14 @@ function Hero() {
         <Button type='stroke' onClick={gotoAbout}>
           Scopri di più
         </Button>
-      </div>
-      <div className={classes.hero_imagebox}>
+      </motion.div>
+      <motion.div
+        className={classes.hero_imagebox}
+        whileInView={{ scale: 1, opacity: 1 }}
+        initial={{ scale: 0, opacity: 0 }}
+        transition={{ duration: 2, delay: 0.5 }}
+        viewport={{ once: true }}
+      >
         <Image
           className={classes.hero_image}
           alt='foto dottore Nicola De Candia Bari'
@@ -61,7 +74,7 @@ function Hero() {
           placeholder='blur'
           blurDataURL='assets/papa2placeholder.png'
         />
-      </div>
+      </motion.div>
     </div>
   );
 }

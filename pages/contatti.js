@@ -11,7 +11,7 @@ function ContactPage() {
         <title>Contatti-otorinodecandia</title>
         <meta
           name='description'
-          content='come contattare il dottore Nicola De Candia'
+          content='Come contattare il dottore Nicola De Candia'
         ></meta>
       </Head>
       <div className={`container ${classes.address_container}`}>

@@ -7,7 +7,7 @@ function CasiCliniciPage() {
         <title>Casiclinici-otorinodecandia</title>
         <meta
           name='description'
-          content='casi clinici incontrati dal dottore'
+          content='Alcuni dei casi clinici eseguiti dal Dottor Nicola De Candia'
         ></meta>
       </Head>
       <div className='container'>

@@ -15,7 +15,11 @@ function AboutPage() {
         <title>About me-otorinodecandia</title>
         <meta
           name='description'
-          content='curriculum vitae of doctor Nicola De Candia'
+          content="Il Dott. Nicola De Candia</span> si è
+          iscritto nell'anno accademico 1981/82 alla Facoltà di Medicina
+          e Chirurgia dell' Università di Bari, laureandosi in corso
+          nella stessa sede il 13/11/1987, riportando la votazione di{' '}
+          110/110 e lode. "
         ></meta>
       </Head>
       <div className={`${classes.aboutme_container} container`}>

@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './card.module.css';
 import { TiTick } from 'react-icons/ti';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 function Card({ image, title, list, type, Icon }) {
   return (

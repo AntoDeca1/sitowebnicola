@@ -8,7 +8,7 @@ import classes from '../styles/Home.module.css';
 import Hero from '../components/home/HeroComponent/herocomponent';
 
 export default function Home() {
-  const { ref: heroRef, inView: heroVisible } = useInView();
+  // const { ref: heroRef, inView: heroVisible } = useInView();
   const { ref: skillsRef, inView: skillsVisibile } = useInView();
   return (
     <>
@@ -17,16 +17,14 @@ export default function Home() {
           <title>Home-otorinodecandia</title>
           <meta
             name='description'
-            content='homepage of doctor Nicola De Candia'
+            content='Nicola De Candia è un otorino con più di 30 anni di esperienza nel settore'
           ></meta>
         </Head>
         <SlideShow />
       </section>
       <section
-        className={`${classes.hero_section} ${
-          heroVisible === true ? '' : 'section-hidden-left'
-        }`}
-        ref={heroRef}
+        className={`${classes.hero_section} `}
+        // ref={heroRef}
       >
         <Hero />
       </section>
