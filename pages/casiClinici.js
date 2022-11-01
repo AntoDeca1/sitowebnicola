@@ -15,7 +15,10 @@ function CasiCliniciPage() {
           <h1 className={classes.casiClinici_title}>
             <span className='color'>Casi</span> Clinici
           </h1>
-          <p>Alcuni casi clinici eseguiti dal dott. Nicola De Candia.</p>
+          <p>
+            Alcuni casi clinici eseguiti dal dott. Nicola De Candia.(I video qui
+            riportati possono urtare la vostra sensibilità)
+          </p>
         </div>
         <div className={classes.video_box}>
           <h2 className={classes.videobox_title}>

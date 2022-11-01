@@ -67,6 +67,10 @@
     padding: 2.4rem 4.8rem;
   }
 
+  .aboutme_img {
+    width: 100;
+  }
+
   /* .aboutme_img {
     width: 60%;
     z-index: 3;
