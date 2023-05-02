@@ -81,15 +81,14 @@ function ContactPage() {
       <div className={classes.map}>
         <iframe
           width='100%'
-          height='500'
-          id='gmap_canvas'
-          src="https://maps.google.com/maps?q=Via%20N.%20dall'Arca%2019%20,Bari&t=&z=17&ie=UTF8&iwloc=&output=embed"
-          frameBorder='0'
-          scrolling='no'
-          marginHeight='0'
-          marginWidth='0'
-          title='Mappa Studio Dottor De Candia'
-        ></iframe>
+          height='600'
+          frameborder='0'
+          marginheight='0'
+          marginwidth='0'
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Via%20Nicolo%20dall'%20Arca,%20Bari+(Your%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        >
+          <a href='https://www.gps.ie/sport-gps/'>fitness tracker</a>
+        </iframe>
       </div>
       <div className={`container ${classes.howtoreach_container}`}>
         <h1 className={classes.howtoreach_bigtitle}>

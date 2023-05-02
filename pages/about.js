@@ -2,6 +2,7 @@ import classes from '../styles/About.module.css';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import Head from 'next/head';
+import dotImage from '../public/assets/papa2.png';
 import { motion, AnimatePresence } from 'framer-motion';
 function AboutPage() {
   const { ref: aboutmeRef, inView: heroVisible } = useInView();
@@ -269,10 +270,8 @@ function AboutPage() {
         >
           <Image
             className={classes.aboutme_img}
-            src={'/assets/papa2.png'}
+            src={dotImage}
             alt={'foto dottore Nicola De Candia Bari'}
-            width={505}
-            height={758}
             placeholder='blur'
             blurDataURL='assets/papa2placeholder.png'
           ></Image>
